@@ -1,6 +1,4 @@
 import crypt as c
-
-
 def test_pass(encrypted_pass, filename):
 	salt = encrypted_pass[0:2]
 	dict_list = open(filename,'r').split('\n')
@@ -26,5 +24,3 @@ def main(filename, dict_file):
 dict_file = input("What is your dictionary file name? ")
 password_file = input("What is your password file name? ")
 main(password_file,dict_file)
-	
-
